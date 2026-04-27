@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A144AB7A-87E8-45CD-A4E6-34F86EF8862A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Admin_WorkEase</RootNamespace>
+    <AssemblyName>Admin_WorkEase</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCenter_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddCenter_Control.Designer.cs">
+      <DependentUpon>AddCenter_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddChildren_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddChildren_Control.Designer.cs">
+      <DependentUpon>AddChildren_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWorker_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddWorker_Control.Designer.cs">
+      <DependentUpon>AddWorker_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Attendance_Control.Designer.cs">
+      <DependentUpon>Attendance_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Children_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Children_Control.Designer.cs">
+      <DependentUpon>Children_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Health_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Health_Control.Designer.cs">
+      <DependentUpon>Health_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Control.Designer.cs">
+      <DependentUpon>Dashboard_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Centers_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Centers_Control.Designer.cs">
+      <DependentUpon>Centers_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Worker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Worker.Designer.cs">
+      <DependentUpon>Worker.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCenter_Control.resx">
+      <DependentUpon>AddCenter_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddChildren_Control.resx">
+      <DependentUpon>AddChildren_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWorker_Control.resx">
+      <DependentUpon>AddWorker_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Children_Control.resx">
+      <DependentUpon>Children_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Health_Control.resx">
+      <DependentUpon>Health_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_Control.resx">
+      <DependentUpon>Dashboard_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Centers_Control.resx">
+      <DependentUpon>Centers_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Worker.resx">
+      <DependentUpon>Worker.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
